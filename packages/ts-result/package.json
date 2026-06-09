@@ -1,0 +1,39 @@
+{
+  "name": "@punpun-dev/ts-result",
+  "version": "0.1.4",
+  "description": "A tiny TypeScript Result type for explicit success and failure values",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "result",
+    "typescript",
+    "error-handling",
+    "rust-style",
+    "algebraic-data-types"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/martin-dinahet/ts-result"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "pnpm build"
+  },
+  "dependencies": {
+    "@punpun-dev/ts-option": "workspace:^"
+  }
+}

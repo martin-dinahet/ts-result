@@ -1,3 +1,5 @@
-node_modules
-dist
-.zed
+node_modules/
+.pnpm-store/
+dist/
+.tsbuildinfo/
+.zed/
