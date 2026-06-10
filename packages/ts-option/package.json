@@ -4,15 +4,16 @@
   "description": "A tiny TypeScript Option type for explicit nullable and optional values",
   "type": "module",
   "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "types": "./types/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
+      "types": "./types/index.d.ts",
       "default": "./dist/index.js"
     }
   },
   "files": [
     "dist",
+    "types",
     "README.md",
     "LICENSE"
   ],
